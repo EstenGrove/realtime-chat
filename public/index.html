@@ -1,0 +1,32 @@
+<!-- ******************************************
+*  Author : Esten Grove   
+*  Created On : Sun Jan 13 2019
+*  File : index.html
+******************************************* -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="author" content="Esten Grove" />
+    <script src="//cdnjs.cloudflare.com/ajax/libs/socket.io/2.2.0/socket.io.dev.js"></script>
+    <link rel="stylesheet" href="styles.css" type="text/css" />
+    <title>WebSockets App</title>
+  </head>
+
+  <body>
+    <h2 class="title">Chat</h2>
+    <div class="chat">
+      <div class="chat-window">
+        <div id="output"></div>
+        <div id="feedback"></div>
+      </div>
+      <input type="text" name="handle" id="handle" placeholder="Handle..." />
+      <input type="text" name="message" id="message" placeholder="Message..." />
+      <button class="sendBtn">Send</button>
+    </div>
+    <script src="/chat.js"></script>
+  </body>
+</html>
